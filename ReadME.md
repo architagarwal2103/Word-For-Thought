@@ -253,7 +253,7 @@ where \(d\) denotes the feature dimension and \(K\) the number of emotion catego
 
 ### Results
 
-- **Test accuracy:** **~40%**
+- **Test accuracy:** **~68%**
 
 The obtained accuracy reflects the **inherent difficulty of speech emotion recognition**, particularly with feature-based classical machine learning methods. Variability in speakers, recording conditions, and emotional expression introduces significant challenges, highlighting the importance of robust feature representations and dataset quality.
 
