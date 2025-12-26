@@ -50,9 +50,7 @@ This project addresses the problem of **animal image classification**, where the
 
 The task is formulated as a **multi-class supervised classification problem**:
 
-\[
-f : \mathbb{R}^{H \times W \times C} \rightarrow \{1, \dots, K\}
-\]
+f : R^(H × W × C) → {1, ..., K}
 
 where \(H, W, C\) denote image dimensions and \(K\) is the number of animal classes.
 
@@ -97,9 +95,7 @@ This project implements a **regression-based model** to predict house prices fro
 
 House price prediction is formulated as a supervised regression problem:
 
-\[
-y = f(x_1, x_2, \dots, x_n)
-\]
+y = f(x1, x2, ..., xn)
 
 where the objective is to minimize the **Mean Squared Error (MSE)** between predicted and actual prices.
 
@@ -139,15 +135,11 @@ This project implements **linear regression from first principles**, focusing on
 
 The hypothesis function is:
 
-\[
-\hat{y} = w^T x + b
-\]
+ŷ = wᵀx + b
 
 The objective function is the **Mean Squared Error**:
 
-\[
-J(w, b) = \frac{1}{n} \sum_{i=1}^{n} (\hat{y}_i - y_i)^2
-\]
+J(w, b) = (1/n) Σ (ŷᵢ − yᵢ)²
 
 Optimization is performed using **gradient descent**.
 
@@ -186,9 +178,7 @@ This project implements **logistic regression** for binary classification tasks.
 
 The model estimates class probabilities using the sigmoid function:
 
-\[
-P(y=1|x) = \sigma(w^T x + b)
-\]
+P(y = 1 | x) = σ(wᵀx + b)
 
 Training minimizes **binary cross-entropy loss** using gradient-based optimization.
 
@@ -240,9 +230,7 @@ In this project, features such as **Mel-Frequency Cepstral Coefficients (MFCCs)*
 
 After feature extraction, each audio sample is represented as a fixed-length feature vector. The emotion recognition task is then formulated as a **supervised multi-class classification problem**:
 
-\[
-f: \mathbb{R}^d \rightarrow \{1, 2, \dots, K\}
-\]
+f : R^d → {1, 2, ..., K}
 
 where \(d\) denotes the feature dimension and \(K\) the number of emotion categories. A supervised classifier is trained on labeled feature vectors to learn the mapping from acoustic features to emotional states. Model parameters are optimized by minimizing a classification loss on the training set and evaluated on unseen data.
 
